@@ -22,3 +22,14 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.pdb
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.genruntimeconfig.cache
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.CopyComplete
