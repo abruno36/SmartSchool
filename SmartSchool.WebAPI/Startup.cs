@@ -77,9 +77,9 @@ namespace SmartSchool.WebAPI
                             },
                             Contact = new Microsoft.OpenApi.Models.OpenApiContact
                             {
-                                Name = "Vinícius de Andrade",
+                                Name = "Antonio Bruno",
                                 Email = "",
-                                Url = new Uri("http://programadamente.com")
+                                Url = new Uri("http://techpcsites.com")
                             }
                         }
                     );

@@ -80,7 +80,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult GetById(int id)
         {
             var aluno = _repo.GetAlunoById(id, false);
-            if (aluno == null) return BadRequest("O Aluno não foi encontrado");
+            if (aluno == null) return BadRequest($"Aluno(a) {id} não foi encontrado(a)");
 
             var alunoDto = _mapper.Map<AlunoRegistrarDto>(aluno);
 
@@ -99,7 +99,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
             }
 
-            return BadRequest("Aluno não cadastrado");
+            return BadRequest($"Aluno(a) {aluno.Nome} não cadastrado");
         }
 
         // api/aluno
@@ -107,7 +107,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult Put(int id, AlunoRegistrarDto model)
         {
             var aluno = _repo.GetAlunoById(id);
-            if (aluno == null) return BadRequest("Aluno não encontrado");
+            if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado");
 
             _mapper.Map(model, aluno);
 
@@ -117,7 +117,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
             }
 
-            return BadRequest("Aluno não Atualizado");
+            return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
         // api/aluno
@@ -125,7 +125,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult Patch(int id, AlunoPatchDto model)
         {
             var aluno = _repo.GetAlunoById(id);
-            if (aluno == null) return BadRequest("Aluno não encontrado");
+            if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado");
 
             _mapper.Map(model, aluno);
 
@@ -135,7 +135,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoPatchDto>(aluno));
             }
 
-            return BadRequest("Aluno não Atualizado");
+            return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
         // api/aluno/{id}/trocarEstado
@@ -143,33 +143,33 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult trocarEstado(int id, TrocaEstadoDto trocaEstado)
         {
             var aluno = _repo.GetAlunoById(id);
-            if (aluno == null) return BadRequest("Aluno não encontrado");
+            if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado");
 
             aluno.Ativo = trocaEstado.Estado;
 
             _repo.Update(aluno);
             if (_repo.SaveChanges())
             {
-                var msn = aluno.Ativo ? "ativado" : "desativado";
-                return Ok(new { message = $"Aluno {msn} com sucesso!" });
+                var msn = aluno.Ativo ? "ativado(a)" : "desativado(a)";
+                return Ok(new { message = $"Aluno(a) {aluno.Nome}, {msn} com sucesso!" });
             }
 
-            return BadRequest("Aluno não Atualizado");
+            return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var aluno = _repo.GetAlunoById(id);
-            if (aluno == null) return BadRequest("Aluno não encontrado");
+            if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado(a)");
 
             _repo.Delete(aluno);
             if (_repo.SaveChanges())
             {
-                return Ok("Aluno deletado");
+                return Ok($"Aluno(a) {id} deletado com sucesso");
             }
 
-            return BadRequest("Aluno não deletado");
+            return BadRequest($"Aluno(a) {aluno.Nome} não deletado(a)");
         }
     }
 }

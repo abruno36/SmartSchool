@@ -1,11 +1,9 @@
-using System.Collections.Generic;
-using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SmartSchool.WebAPI.Data;
-using SmartSchool.WebAPI.V1.Dtos;
 using SmartSchool.WebAPI.Models;
+using SmartSchool.WebAPI.V1.Dtos;
+using System.Collections.Generic;
 
 namespace SmartSchool.WebAPI.V1.Controllers
 {
@@ -43,7 +41,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult GetById(int id)
         {
             var Professor = _repo.GetProfessorById(id, true);
-            if (Professor == null) return BadRequest("O Professor não foi encontrado");
+            if (Professor == null) return BadRequest($"Professor(a) {id} não foi encontrado(a)");
 
             var professorDto = _mapper.Map<ProfessorDto>(Professor);
 
@@ -72,7 +70,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/professor/{model.Id}", _mapper.Map<ProfessorDto>(prof));
             }
 
-            return BadRequest("Professor não cadastrado");
+            return BadRequest($"Professor(a) {model.Nome} não foi encontrado(a)");
         }
 
         // api/Professor
@@ -80,7 +78,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult Put(int id, ProfessorRegistrarDto model)
         {
             var prof = _repo.GetProfessorById(id, false);
-            if (prof == null) return BadRequest("Professor não encontrado");
+            if (prof == null) return BadRequest($"Professor(a) {id} não foi encontrado(a)");
 
             _mapper.Map(model, prof);
 
@@ -90,7 +88,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/professor/{model.Id}", _mapper.Map<ProfessorDto>(prof));
             }
 
-            return BadRequest("Professor não Atualizado");
+            return BadRequest($"Professor(a) {id} não foi atualizado(a)");
         }
 
         // api/Professor
@@ -98,7 +96,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult Patch(int id, ProfessorRegistrarDto model)
         {
             var prof = _repo.GetProfessorById(id, false);
-            if (prof == null) return BadRequest("Professor não encontrado");
+            if (prof == null) return BadRequest($"Professor(a) {id} não foi encontrado(a)");
 
             _mapper.Map(model, prof);
 
@@ -108,22 +106,22 @@ namespace SmartSchool.WebAPI.V1.Controllers
                 return Created($"/api/professor/{model.Id}", _mapper.Map<ProfessorDto>(prof));
             }
 
-            return BadRequest("Professor não Atualizado");
+            return BadRequest($"Professor(a) {id} não foi atualizado(a)");
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var prof = _repo.GetProfessorById(id, false);
-            if (prof == null) return BadRequest("Professor não encontrado");
+            if (prof == null) return BadRequest($"Professor(a) {id} não foi encontrado(a)");
 
             _repo.Delete(prof);
             if (_repo.SaveChanges())
             {
-                return Ok("professor deletado");
+                return Ok($"professor(a) {prof.Id} deletado(a)");
             }
 
-            return BadRequest("professor não deletado");
+            return BadRequest($"Professoe(a) {prof.Nome} não deletado(a)");
         }
     }
 }
