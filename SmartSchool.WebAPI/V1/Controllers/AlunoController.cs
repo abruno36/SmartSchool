@@ -1,13 +1,11 @@
-using System.Collections.Generic;
-using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SmartSchool.WebAPI.Data;
-using SmartSchool.WebAPI.V1.Dtos;
-using SmartSchool.WebAPI.Models;
-using System.Threading.Tasks;
 using SmartSchool.WebAPI.Helpers;
+using SmartSchool.WebAPI.Models;
+using SmartSchool.WebAPI.V1.Dtos;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SmartSchool.WebAPI.V1.Controllers
 {
