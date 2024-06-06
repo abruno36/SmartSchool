@@ -32,7 +32,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável para retornar todos os meus alunos
+        /// Método responsável para retornar todos os meus alunos - com parâmetros
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -45,6 +45,17 @@ namespace SmartSchool.WebAPI.V1.Controllers
             Response.AddPagination(alunos.CurrentPage, alunos.PageSize, alunos.TotalCount, alunos.TotalPages);
 
             return Ok(alunosResult);
+        }
+
+        /// <summary>
+        /// Método responsável para retornar todos os meus alunos - com professores
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("getAllAlunos")]
+        public IActionResult GetAllAlunos()
+        {
+            var alunos = _repo.GetAllAlunos(true, true);
+            return Ok(alunos);
         }
 
         /// <summary>

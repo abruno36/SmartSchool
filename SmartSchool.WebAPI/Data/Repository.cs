@@ -1,9 +1,8 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SmartSchool.WebAPI.Helpers;
 using SmartSchool.WebAPI.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace SmartSchool.WebAPI.Data
 {
@@ -66,15 +65,16 @@ namespace SmartSchool.WebAPI.Data
             return await PageList<Aluno>.CreateAsync(query, pageParams.PageNumber, pageParams.PageSize);
         }
 
-        public Aluno[] GetAllAlunos(bool includeProfessor = false)
+        public Aluno[] GetAllAlunos(bool alunosAtivos, bool includeProfessor)
         {
             IQueryable<Aluno> query = _context.Alunos;
 
-            if (includeProfessor)
+            if (includeProfessor && alunosAtivos)
             {
                 query = query.Include(a => a.AlunosDisciplinas)
                              .ThenInclude(ad => ad.Disciplina)
-                             .ThenInclude(d => d.Professor);
+                             .ThenInclude(d => d.Professor)
+                             .Where(aluno => aluno.Ativo == alunosAtivos);
             }
 
             query = query.AsNoTracking().OrderBy(a => a.Id);

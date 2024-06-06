@@ -26,8 +26,8 @@ namespace SmartSchool.WebAPI.V1.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var Professor = _repo.GetAllProfessores(true);
-            return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(Professor));
+            var professor = _repo.GetAllProfessores(true);
+            return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(professor));
         }
 
         [HttpGet("getRegister")]
