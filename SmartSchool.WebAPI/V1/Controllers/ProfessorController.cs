@@ -23,11 +23,16 @@ namespace SmartSchool.WebAPI.V1.Controllers
             _repo = repo;
         }
 
+        /// <summary>
+        /// Método responsável para retornar todos os professores ativos 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
             var professor = _repo.GetAllProfessores(true);
-            return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(professor));
+            //return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(professor));
+            return Ok(professor);
         }
 
         [HttpGet("getRegister")]
@@ -35,7 +40,11 @@ namespace SmartSchool.WebAPI.V1.Controllers
         {
             return Ok(new ProfessorRegistrarDto());
         }
-
+        /// <summary>
+        /// Método responsável por retonar apenas um Professor por meio do Código ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // api/Professor
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

@@ -126,7 +126,8 @@ namespace SmartSchool.WebAPI.Data
             {
                 query = query.Include(p => p.Disciplinas)
                              .ThenInclude(d => d.AlunosDisciplinas)
-                             .ThenInclude(ad => ad.Aluno);
+                             .ThenInclude(ad => ad.Aluno)
+                             .Where(prof => prof.Ativo == true);
             }
 
             query = query.AsNoTracking().OrderBy(p => p.Id);

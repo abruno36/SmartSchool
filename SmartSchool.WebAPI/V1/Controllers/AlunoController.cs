@@ -32,7 +32,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável para retornar todos os meus alunos - com parâmetros
+        /// Método responsável para retornar todos os alunos - com parâmetros
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -48,7 +48,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável para retornar todos os meus alunos - com professores
+        /// Método responsável para retornar todos os alunos ativos - com professores
         /// </summary>
         /// <returns></returns>
         [HttpGet("getAllAlunos")]

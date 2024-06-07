@@ -18,13 +18,13 @@
         </member>
         <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Get(SmartSchool.WebAPI.Helpers.PageParams)">
             <summary>
-            Método responsável para retornar todos os meus alunos - com parâmetros
+            Método responsável para retornar todos os alunos - com parâmetros
             </summary>
             <returns></returns>
         </member>
         <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.GetAllAlunos">
             <summary>
-            Método responsável para retornar todos os meus alunos - com professores
+            Método responsável para retornar todos os alunos ativos - com professores
             </summary>
             <returns></returns>
         </member>
@@ -51,6 +51,19 @@
             <summary>
             Versão 1 do meu controlador de Professores
             </summary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Get">
+            <summary>
+            Método responsável para retornar todos os professores ativos 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.GetById(System.Int32)">
+            <summary>
+            Método responsável por retonar apenas um Professor por meio do Código ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
         </member>
         <member name="P:SmartSchool.WebAPI.V1.Dtos.AlunoDto.Id">
             <summary>
