@@ -52,7 +52,7 @@
             Versão 1 do meu controlador de Professores
             </summary>
         </member>
-        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Get">
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Get(SmartSchool.WebAPI.Helpers.PageParamsProf)">
             <summary>
             Método responsável para retornar todos os professores ativos 
             </summary>

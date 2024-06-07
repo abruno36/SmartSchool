@@ -1,6 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using SmartSchool.WebAPI.Data;
+using SmartSchool.WebAPI.Helpers;
 using SmartSchool.WebAPI.Models;
 using SmartSchool.WebAPI.V1.Dtos;
 using System.Collections.Generic;
@@ -28,9 +29,9 @@ namespace SmartSchool.WebAPI.V1.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get([FromQuery] PageParamsProf pageParams)
         {
-            var professor = _repo.GetAllProfessores(true);
+            var professor = _repo.GetAllProfessores(pageParams);
             //return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(professor));
             return Ok(professor);
         }
