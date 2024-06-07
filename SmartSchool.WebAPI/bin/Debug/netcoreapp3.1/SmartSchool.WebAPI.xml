@@ -47,6 +47,36 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Post(SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto)">
+            <summary>
+            Método responsável por inserir um novo aluno.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Put(System.Int32,SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto)">
+            <summary>
+            Método responsável por alterar um aluno.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Patch(System.Int32,SmartSchool.WebAPI.V1.Dtos.AlunoPatchDto)">
+            <summary>
+            Método responsável por alterar um novo aluno.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.trocarEstado(System.Int32,SmartSchool.WebAPI.V1.Dtos.TrocaEstadoDto)">
+            <summary>
+            Método responsável por alterar o estado(ativo) de um aluno.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            Método responsável por deletar um aluno.
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:SmartSchool.WebAPI.V1.Controllers.ProfessorController">
             <summary>
             Versão 1 do meu controlador de Professores
@@ -63,6 +93,44 @@
             Método responsável por retonar apenas um Professor por meio do Código ID
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.GetByAlunoId(System.Int32)">
+            <summary>
+            Método responsável por retonar apenas por aluno ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.GetAllProfessoresDisciplinaId(System.Int32)">
+            <summary>
+            Método responsável por retonar todos os professores por disciplinas
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Post(SmartSchool.WebAPI.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por inserir um novo professor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Put(System.Int32,SmartSchool.WebAPI.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por alterar um professor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Patch(System.Int32,SmartSchool.WebAPI.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por alterar um professor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Delete(System.Int32)">
+            <summary>
+            Método responsável por deletar um professor.
+            </summary>
             <returns></returns>
         </member>
         <member name="P:SmartSchool.WebAPI.V1.Dtos.AlunoDto.Id">

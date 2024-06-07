@@ -96,6 +96,10 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return Ok(alunoDto);
         }
 
+        /// <summary>
+        /// Método responsável por inserir um novo aluno.
+        /// </summary>
+        /// <returns></returns>
         // api/aluno
         [HttpPost]
         public IActionResult Post(AlunoRegistrarDto model)
@@ -111,6 +115,10 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return BadRequest($"Aluno(a) {aluno.Nome} não cadastrado");
         }
 
+        /// <summary>
+        /// Método responsável por alterar um aluno.
+        /// </summary>
+        /// <returns></returns>
         // api/aluno
         [HttpPut("{id}")]
         public IActionResult Put(int id, AlunoRegistrarDto model)
@@ -129,6 +137,10 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
+        /// <summary>
+        /// Método responsável por alterar um novo aluno.
+        /// </summary>
+        /// <returns></returns>
         // api/aluno
         [HttpPatch("{id}")]
         public IActionResult Patch(int id, AlunoPatchDto model)
@@ -147,6 +159,10 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
+        /// <summary>
+        /// Método responsável por alterar o estado(ativo) de um aluno.
+        /// </summary>
+        /// <returns></returns>
         // api/aluno/{id}/trocarEstado
         [HttpPatch("{id}/trocarEstado")]
         public IActionResult trocarEstado(int id, TrocaEstadoDto trocaEstado)
@@ -166,6 +182,11 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
         }
 
+        /// <summary>
+        /// Método responsável por deletar um aluno.
+        /// </summary>
+        /// <returns></returns>
+        // api/aluno
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
