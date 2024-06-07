@@ -6,7 +6,7 @@
     <members>
         <member name="T:SmartSchool.WebAPI.V1.Controllers.AlunoController">
             <summary>
-            Versão 1 do meu controlador de Alunos
+            Versão 1.0 do meu controlador de Alunos
             </summary>
         </member>
         <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
@@ -79,7 +79,7 @@
         </member>
         <member name="T:SmartSchool.WebAPI.V1.Controllers.ProfessorController">
             <summary>
-            Versão 1 do meu controlador de Professores
+            Versão 1.0 do meu controlador de Professores
             </summary>
         </member>
         <member name="M:SmartSchool.WebAPI.V1.Controllers.ProfessorController.Get(SmartSchool.WebAPI.Helpers.PageParamsProf)">
@@ -209,9 +209,14 @@
             Registro do Professor, para outros negócios na Instituição.
             </summary>
         </member>
+        <member name="T:SmartSchool.WebAPI.V1.Dtos.TrocaEstadoDto">
+            <summary>
+            Este é o DTO de mudança de estado do Aluno (ativo).
+            </summary>
+        </member>
         <member name="T:SmartSchool.WebAPI.V2.Controllers.AlunoController">
             <summary>
-            Versão 1 do meu controlador de Alunos
+            Versão 2.0 do meu controlador de Alunos
             </summary>
         </member>
         <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
@@ -246,19 +251,19 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Post(SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto)">
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Post(SmartSchool.WebAPI.V2.Dtos.AlunoRegistrarDto)">
             <summary>
             Método responsável por inserir um novo aluno.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Put(System.Int32,SmartSchool.WebAPI.V1.Dtos.AlunoRegistrarDto)">
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Put(System.Int32,SmartSchool.WebAPI.V2.Dtos.AlunoRegistrarDto)">
             <summary>
             Método responsável por alterar um aluno.
             </summary>
             <returns></returns>
         </member>
-        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.trocarEstado(System.Int32,SmartSchool.WebAPI.V1.Dtos.TrocaEstadoDto)">
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.trocarEstado(System.Int32,SmartSchool.WebAPI.V2.Dtos.TrocaEstadoDto)">
             <summary>
             Método responsável por alterar o estado(ativo) de um aluno.
             </summary>
@@ -313,6 +318,11 @@
         <member name="P:SmartSchool.WebAPI.V2.Dtos.AlunoRegistrarDto.Nome">
             <summary>
             Nome: primeiro nome e o sobrenome do Aluno.
+            </summary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Dtos.TrocaEstadoDto">
+            <summary>
+            Este é o DTO de mudança de estado do Aluno (ativo).
             </summary>
         </member>
     </members>

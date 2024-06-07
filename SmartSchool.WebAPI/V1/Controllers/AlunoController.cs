@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace SmartSchool.WebAPI.V1.Controllers
 {
     /// <summary>
-    /// Versão 1 do meu controlador de Alunos
+    /// Versão 1.0 do meu controlador de Alunos
     /// </summary>
     [ApiController]
     [ApiVersion("1.0")]

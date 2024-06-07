@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace SmartSchool.WebAPI.V1.Controllers
 {
     /// <summary>
-    /// Versão 1 do meu controlador de Professores
+    /// Versão 1.0 do meu controlador de Professores
     /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
