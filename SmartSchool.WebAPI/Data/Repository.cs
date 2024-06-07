@@ -57,9 +57,9 @@ namespace SmartSchool.WebAPI.Data
 
             if (pageParams.Matricula > 0)
                 query = query.Where(aluno => aluno.Matricula == pageParams.Matricula);
-            
-            if (pageParams.Ativo)
-                query = query.Where(aluno => aluno.Ativo == pageParams.Ativo);
+
+            if (pageParams.Ativo != null)
+                query = query.Where(aluno => aluno.Ativo == (pageParams.Ativo != 0));
 
             // return await query.ToListAsync();
             return await PageList<Aluno>.CreateAsync(query, pageParams.PageNumber, pageParams.PageSize);
@@ -122,7 +122,7 @@ namespace SmartSchool.WebAPI.Data
         {
             IQueryable<Professor> query = _context.Professores;
 
-            if (pageParams.Alunos)
+            if (pageParams.Alunos == 1)
             {
                 query = query.Include(p => p.Disciplinas)
                              .ThenInclude(d => d.AlunosDisciplinas)
@@ -140,8 +140,8 @@ namespace SmartSchool.WebAPI.Data
             if (pageParams.Registro > 0)
                 query = query.Where(prof => prof.Registro == pageParams.Registro);
 
-            if (pageParams.Ativo)
-                query = query.Where(prof => prof.Ativo == pageParams.Ativo);
+            if (pageParams.Ativo != null)
+                query = query.Where(aluno => aluno.Ativo == (pageParams.Ativo != 0));
 
             query = query.AsNoTracking().OrderBy(p => p.Id);
 
