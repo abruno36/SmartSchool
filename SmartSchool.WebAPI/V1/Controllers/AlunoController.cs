@@ -59,7 +59,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retonar apenas um único AlunoDTO.
+        /// Método responsável por retornar apenas um único AlunoDTO.
         /// </summary>
         /// <returns></returns>
         [HttpGet("ByDisciplina/{id}")]
@@ -70,7 +70,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retonar apenas um único AlunoDTO.
+        /// Método responsável por retornar apenas um único AlunoDTO.
         /// </summary>
         /// <returns></returns>
         [HttpGet("getRegister")]
@@ -80,7 +80,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retonar apenas um Aluno por meio do Código ID
+        /// Método responsável por retornar apenas um Aluno por meio do Código ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

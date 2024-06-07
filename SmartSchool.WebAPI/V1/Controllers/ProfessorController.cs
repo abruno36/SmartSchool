@@ -36,13 +36,17 @@ namespace SmartSchool.WebAPI.V1.Controllers
             return Ok(professor);
         }
 
+        /// <summary>
+        /// Método responsável por retornar apenas um único ProfessorDTO.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("getRegister")]
         public IActionResult GetRegister()
         {
             return Ok(new ProfessorRegistrarDto());
         }
         /// <summary>
-        /// Método responsável por retonar apenas um Professor por meio do Código ID
+        /// Método responsável por retornar apenas um Professor por meio do Código ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -59,7 +63,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retonar apenas por aluno ID
+        /// Método responsável por retornar apenas por aluno ID
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -74,7 +78,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retonar todos os professores por disciplinas
+        /// Método responsável por retornar todos os professores por disciplinas
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
