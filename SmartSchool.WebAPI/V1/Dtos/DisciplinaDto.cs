@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace SmartSchool.WebAPI.V1.Dtos
 {
+    /// <summary>
+    /// Este é o DTO de Disciplinas.
+    /// </summary>
     public class DisciplinaDto
     {
         public int Id { get; set; }

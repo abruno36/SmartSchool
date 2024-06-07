@@ -3,7 +3,7 @@ using System;
 namespace SmartSchool.WebAPI.V1.Dtos
 {
     /// <summary>
-    /// Este � o DTO de Aluno para Registrar.
+    /// Este é o DTO de Aluno para Registrar.
     /// </summary>
     public class AlunoPatchDto
     {

@@ -7,13 +7,13 @@ using SmartSchool.WebAPI.V1.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SmartSchool.WebAPI.V1.Controllers
+namespace SmartSchool.WebAPI.V2.Controllers
 {
     /// <summary>
     /// Versão 1 do meu controlador de Alunos
     /// </summary>
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class AlunoController : ControllerBase
     {
@@ -70,16 +70,6 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         /// <summary>
-        /// Método responsável por retornar apenas um único AlunoDTO.
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet("getRegister")]
-        public IActionResult GetRegister()
-        {
-            return Ok(new AlunoRegistrarDto());
-        }
-
-        /// <summary>
         /// Método responsável por retornar apenas um Aluno por meio do Código ID
         /// </summary>
         /// <param name="id"></param>
@@ -132,28 +122,6 @@ namespace SmartSchool.WebAPI.V1.Controllers
             if (_repo.SaveChanges())
             {
                 return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
-            }
-
-            return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");
-        }
-
-        /// <summary>
-        /// Método responsável por alterar um novo aluno.
-        /// </summary>
-        /// <returns></returns>
-        // api/aluno
-        [HttpPatch("{id}")]
-        public IActionResult Patch(int id, AlunoPatchDto model)
-        {
-            var aluno = _repo.GetAlunoById(id);
-            if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado");
-
-            _mapper.Map(model, aluno);
-
-            _repo.Update(aluno);
-            if (_repo.SaveChanges())
-            {
-                return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoPatchDto>(aluno));
             }
 
             return BadRequest($"Aluno(a) {aluno.Nome} não Atualizado");

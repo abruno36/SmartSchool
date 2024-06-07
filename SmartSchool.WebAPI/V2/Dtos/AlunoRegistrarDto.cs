@@ -1,6 +1,6 @@
 using System;
 
-namespace SmartSchool.WebAPI.V1.Dtos
+namespace SmartSchool.WebAPI.V2.Dtos
 {
     /// <summary>
     /// Este é o DTO de Aluno para Registrar.
