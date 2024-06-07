@@ -13,7 +13,7 @@ namespace SmartSchool.WebAPI.Helpers
 
         public int? Registro { get; set; } = null;
         public string Nome { get; set; } = string.Empty;
-        public int? Ativo { get; set; } = null;
-        public bool Alunos { get; set; } = true;
+        public bool Ativo { get; set; }
+        public bool Alunos { get; set; }
     }
 }
