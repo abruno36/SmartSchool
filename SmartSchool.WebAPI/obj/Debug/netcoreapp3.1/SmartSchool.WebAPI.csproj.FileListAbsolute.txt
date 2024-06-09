@@ -6,18 +6,11 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\SmartSchool.WebAPI.runtimeconfig.dev.json
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\SmartSchool.WebAPI.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\SmartSchool.WebAPI.pdb
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.AssemblyReference.cache
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.AssemblyInfoInputs.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.AssemblyInfo.cs
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.CoreCompileInputs.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\SmartSchool.WebAPI.StaticWebAssets.Manifest.cache
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\SmartSchool.WebAPI.StaticWebAssets.Pack.cache
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.SmartSchool.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.SmartSchool.WebAPI.props
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.SmartSchool.WebAPI.props
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.SmartSchool.WebAPI.props
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.RazorTargetAssemblyInfo.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.pdb
@@ -32,8 +25,6 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.CopyComplete
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\SmartSchool.WebAPI.xml
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
@@ -46,3 +37,8 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\SmartSchool.WebAPI.xml
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.CopyComplete
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csprojAssemblyReference.cache
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\SmartSchool.WebAPI.StaticWebAssets.xml
