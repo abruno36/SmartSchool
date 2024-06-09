@@ -171,7 +171,14 @@ namespace SmartSchool.WebAPI.V1.Controllers
             if (aluno == null) return BadRequest($"Aluno(a) {id} não encontrado");
 
             aluno.Ativo = trocaEstado.Estado;
-            aluno.DataFim = trocaEstado.DataFim;
+
+            if(aluno.Ativo == false)
+            {
+                aluno.DataFim = trocaEstado.DataFim; 
+            }else
+            {
+                aluno.DataFim = null;
+            };
 
             _repo.Update(aluno);
             if (_repo.SaveChanges())

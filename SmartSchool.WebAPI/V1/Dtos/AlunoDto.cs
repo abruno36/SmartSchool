@@ -22,6 +22,7 @@ namespace SmartSchool.WebAPI.V1.Dtos
         /// </summary>
         public int Idade { get; set; }
         public DateTime DataIni { get; set; }
+        public DateTime DataFim { get; set; }
         /// <summary>
         /// Ativar ou não o Aluno
         /// </summary>

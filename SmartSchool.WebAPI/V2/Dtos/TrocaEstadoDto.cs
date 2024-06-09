@@ -8,6 +8,6 @@ namespace SmartSchool.WebAPI.V2.Dtos
     public class TrocaEstadoDto
     {
         public bool Estado { get; set; }
-        public DateTime DataFim { get; set; }
+        public DateTime? DataFim { get; set; }
     }
 }
