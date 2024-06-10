@@ -29,7 +29,6 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.AssemblyReference.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.AssemblyInfoInputs.cache
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.AssemblyInfo.cs
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csproj.CoreCompileInputs.cache
@@ -42,3 +41,4 @@ C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.dll
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.pdb
 C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.genruntimeconfig.cache
+C:\Projetos\Udemy_API_Rest\SmartSchool\SmartSchool.WebAPI\obj\Debug\netcoreapp3.1\SmartSchool.WebAPI.csprojAssemblyReference.cache
