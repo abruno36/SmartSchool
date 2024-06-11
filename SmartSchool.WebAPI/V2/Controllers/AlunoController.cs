@@ -4,6 +4,7 @@ using SmartSchool.WebAPI.Data;
 using SmartSchool.WebAPI.Helpers;
 using SmartSchool.WebAPI.Models;
 using SmartSchool.WebAPI.V2.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -142,7 +143,7 @@ namespace SmartSchool.WebAPI.V2.Controllers
 
             if (aluno.Ativo == false)
             {
-                aluno.DataFim = trocaEstado.DataFim;
+                aluno.DataFim = DateTime.Now;
             }
             else
             {
