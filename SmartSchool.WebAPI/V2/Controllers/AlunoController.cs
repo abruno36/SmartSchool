@@ -141,14 +141,7 @@ namespace SmartSchool.WebAPI.V2.Controllers
 
             aluno.Ativo = trocaEstado.Estado;
 
-            if (aluno.Ativo == false)
-            {
-                aluno.DataFim = DateTime.Now;
-            }
-            else
-            {
-                aluno.DataFim = null;
-            };
+            aluno.DataFim = aluno.Ativo == false ? DateTime.Now : (DateTime?)null;
 
             _repo.Update(aluno);
             if (_repo.SaveChanges())
