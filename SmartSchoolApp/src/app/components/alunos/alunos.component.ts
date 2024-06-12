@@ -85,7 +85,7 @@ export class AlunosComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.unsubscriber))
       .subscribe({
         next: (resp) => {
-          console.log(resp);
+          console.log("resp: ", resp);
           this.carregarAlunos();
           this.toastr.success('Aluno salvo com sucesso!');
         },

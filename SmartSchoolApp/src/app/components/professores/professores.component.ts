@@ -1,6 +1,5 @@
-import { Component, OnInit, TemplateRef, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Professor } from '../../models/Professor';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { Subject } from 'rxjs';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
@@ -9,8 +8,6 @@ import { takeUntil } from 'rxjs/operators';
 import { Util } from '../../util/util';
 import { Disciplina } from '../../models/Disciplina';
 import { Router } from '@angular/router';
-import { Aluno } from '../../models/Aluno';
-import { AlunoService } from '../../services/aluno.service';
 
 @Component({
   selector: 'app-professores',
@@ -23,7 +20,7 @@ export class ProfessoresComponent implements OnInit, OnDestroy {
   public professorSelecionado: Professor;
   private unsubscriber = new Subject<void>();
 
-  public professores: Professor[];
+  public professores: Professor[] = [];
 
   constructor(
     private router: Router,
@@ -58,8 +55,14 @@ export class ProfessoresComponent implements OnInit, OnDestroy {
     this.unsubscriber.complete();
   }
 
-  // disciplinaConcat(disciplinas: Disciplina[]) {
-  //   return Util.nomeConcat(disciplinas);
-  // }
+  disciplinaConcat(disciplinas: Disciplina[]) {
+    return Util.nomeConcat(disciplinas);
+  }
 
+    // Método para obter o nome completo do professor
+  getProfessorNomeCompleto(professor: Professor): string {
+    console.log("professor - ", professor);
+    const nomeCompleto =  `${professor.nome} ${professor.sobrenome}`;
+    return nomeCompleto;
+  }
 }

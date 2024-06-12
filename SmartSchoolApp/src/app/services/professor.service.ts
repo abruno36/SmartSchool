@@ -14,7 +14,7 @@ export class ProfessorService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Professor[]> {
-    return this.http.get<Professor[]>(this.baseURL);
+    return this.http.get<Professor[]>(`${this.baseURL}?Alunos=1`);
   }
 
   getById(id: number): Observable<Professor> {

@@ -62,7 +62,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
 
             var professorDto = _mapper.Map<ProfessorDto>(Professor);
 
-            return Ok(Professor);
+            return Ok(professorDto);
         }
 
         /// <summary>
