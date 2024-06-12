@@ -23,5 +23,10 @@ export class AlunosProfessoresComponent implements OnInit {
     this.router.navigate(['/alunos', id]);
   }
 
+      // Método para obter o nome completo do aluno
+  getAlunoNomeCompleto(aluno: Aluno): string {
+    const nomeCompleto =  `${aluno.nome} ${aluno.sobrenome}`;
+    return nomeCompleto;
+  }
 }
 

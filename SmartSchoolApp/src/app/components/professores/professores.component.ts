@@ -61,7 +61,6 @@ export class ProfessoresComponent implements OnInit, OnDestroy {
 
     // Método para obter o nome completo do professor
   getProfessorNomeCompleto(professor: Professor): string {
-    console.log("professor - ", professor);
     const nomeCompleto =  `${professor.nome} ${professor.sobrenome}`;
     return nomeCompleto;
   }
