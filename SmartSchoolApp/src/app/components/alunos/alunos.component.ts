@@ -160,18 +160,20 @@ export class AlunosComponent implements OnInit, OnDestroy {
 
   alunoSelect(alunoId: number): void {
     this.modeSave = 'patch';
-    this.alunoService.getById(alunoId).subscribe(
-      (alunoReturn) => {
-        this.alunoSelecionado = alunoReturn;
-        this.alunoForm.patchValue(this.alunoSelecionado);
-      },
-      (error) => {
-        this.toastr.error('Alunos não carregados!');
-        console.error(error);
-        this.spinner.hide();
-      },
-      () => this.spinner.hide()
-    );
+    this.spinner.show();
+    this.alunoService.getById(alunoId)
+      .subscribe({
+        next: (alunoReturn: Aluno) => {
+          this.alunoSelecionado = alunoReturn;
+          this.alunoForm.patchValue(this.alunoSelecionado);
+        },
+        error: (error: any) => {
+          this.toastr.error('Alunos não carregados!');
+          console.error(error);
+          this.spinner.hide();
+        },
+        complete: () => this.spinner.hide()
+      });
   }
 
   voltar(): void {
