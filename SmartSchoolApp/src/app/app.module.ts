@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 import { AlunosComponent } from './components/alunos/alunos.component';
 import { ProfessoresComponent } from './components/professores/professores.component';
@@ -45,6 +46,7 @@ import { AlunosProfessoresComponent } from './components/professores/alunos-prof
     BrowserAnimationsModule,
     NgxSpinnerModule,
     BsDropdownModule.forRoot(),
+    PaginationModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: 3500,
       positionClass: 'toast-bottom-right',

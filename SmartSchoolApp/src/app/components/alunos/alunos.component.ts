@@ -47,7 +47,7 @@ export class AlunosComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.pagination = { currentPage: 1, itemsPerPage: 10 } as Pagination;
+    this.pagination = { currentPage: 1, itemsPerPage: 4 } as Pagination;
     this.carregarAlunos();
   }
 
